@@ -8,8 +8,8 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `docs`: a [Strapi](https://strapi.io/) app
+- `web`: a [Next.js](https://nextjs.org/) app
+- `strapi`: a [Strapi](https://strapi.io/) app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
@@ -29,7 +29,7 @@ This turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd overview-display
 pnpm run build
 ```
 
@@ -38,9 +38,12 @@ pnpm run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd overview-display
 pnpm run dev
 ```
+
+web app is hosted on [localhost:3000](http://localhost:3000)
+strapi app is hosted on [localhost:1337](http://localhost:3000)
 
 ### Remote Caching
 
@@ -49,7 +52,7 @@ Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
+cd overview-display
 pnpm dlx turbo login
 ```
 
